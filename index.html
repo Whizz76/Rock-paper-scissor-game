@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Game</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<p class="play"></p>
+<div id="hi">
+<button id="start" onclick="countdown= setInterval(hello,1000)">Play </button></div>
+<!-- onclick="countdown= setInterval(hello,1000)"-->
+
+	<h2 id="count"></h2>
+<p id="you"> You</p>
+<!--<p id="choose"> Nothing is chosen</p>-->
+<img id="ppp">
+<img id="img" alt="image" class="game" >
+<p id="headline"></p>
+<!--<img src="https://tse3.mm.bing.net/th?id=OIP.FcTXkLxB9Gbz4hDThAyEnQAAAA&pid=Api&P=0&w=153&h=151" alt="paper" id="paper" class="game">
+<img src="https://tse2.mm.bing.net/th?id=OIP.5vLRTTM-aMsgtSoBdAmVawAAAA&pid=Api&P=0&w=174&h=171" alt="rock" id="rock" class="game">
+<img src="https://tse2.mm.bing.net/th?id=OIP.WHZ4OatADODSo8fq3-ThBQAAAA&pid=Api&P=0&w=153&h=151" alt="scissor" id="scissor" class="game">-->
+<p id="score"></p>
+<p id="tag" onchange="result()"></p>
+<div id="hola">
+
+	<button id="rock" onclick="rock()"> Rock</button>
+	<button id="paper" onclick="paper()">Paper</button>
+	<button id="scissor" onclick="scissor()">scissor</button>
+	<!--<button id="hola" onclick="heya()"> Play again</button>-->
+</div>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+	let typed= new Typed(".play",{
+		strings: ["Let's play the game!"],
+		typeSpeed:100,
+		backSpeed:100,
+		loop:false
+	})
+</script>
+</body>
+</html>
